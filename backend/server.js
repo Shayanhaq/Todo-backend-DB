@@ -95,7 +95,7 @@ app.delete('/api/todos/:id', async (req, res) => {
 });
 
 // Start the server
-const port = 5005;
+const port = process.env.PORT || 5005;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
