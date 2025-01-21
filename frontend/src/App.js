@@ -50,7 +50,7 @@ const App = () => {
           placeholder="Add a new todo"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          onKeyDown={handleKeyPress} // Listen for Enter key press
+          onKeyDown={handleKeyPress}
         />
         <button onClick={addTodo}>Add</button>
       </div>
@@ -77,7 +77,7 @@ const App = () => {
                     textDecoration: todo.completed ? "line-through" : "none",
                   }}
                 >
-                  {todo.title} {/* Only render the title */}
+                  {todo.title} 
                 </span>
                 <button onClick={() => {
                   setEditing(todo.id); // Set editing mode
